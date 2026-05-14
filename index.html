@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upstate Lift Trucks | Buy & Rent Forklifts – Greenville SC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #2ECC71;
+  --green-hover: #25B765;
+  --black: #0D0D0D;
+  --charcoal: #181818;
+  --steel: #242424;
+  --border: rgba(255,255,255,0.08);
+  --muted: #8A8A8A;
+  --light: #CECECE;
+  --white: #FFFFFF;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Barlow', sans-serif; background: var(--black); color: var(--white); overflow-x: hidden; font-size: 16px; }
+.label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--green); }
+h1,h2,h3 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.0; }
+
+/* HEADER */
+header { height: 68px; background: rgba(13,13,13,0.97); border-bottom: 2px solid var(--green); display: flex; align-items: center; justify-content: space-between; padding: 0 5vw; position: sticky; top: 0; z-index: 100; }
+.logo-wrap { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+.logo-mark { width: 42px; height: 42px; background: var(--green); border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-mark svg { width: 26px; height: 26px; }
+.logo-text { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.2rem; letter-spacing: 0.05em; text-transform: uppercase; color: #fff; line-height: 1.15; }
+.logo-text span { color: var(--green); display: block; }
+nav { display: flex; align-items: center; gap: 4px; }
+nav a { color: var(--light); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; text-decoration: none; padding: 6px 12px; transition: color 0.2s; }
+nav a:hover { color: var(--green); }
+.nav-cta { background: var(--green) !important; color: var(--black) !important; font-weight: 700 !important; border-radius: 3px; }
+
+/* HERO */
+.hero { min-height: 92vh; display: flex; flex-direction: column; justify-content: center; padding: 80px 5vw 60px; position: relative; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: repeating-linear-gradient(-45deg, transparent, transparent 40px, rgba(46,204,113,0.022) 40px, rgba(46,204,113,0.022) 41px); }
+.hero-glow { position: absolute; top: -120px; right: -80px; width: 580px; height: 580px; background: radial-gradient(circle, rgba(46,204,113,0.09) 0%, transparent 65%); pointer-events: none; }
+.hero-inner { position: relative; display: grid; grid-template-columns: 1fr 400px; gap: 56px; align-items: center; max-width: 1200px; margin: 0 auto; width: 100%; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(46,204,113,0.1); border: 1px solid rgba(46,204,113,0.3); border-radius: 2px; padding: 6px 14px; margin-bottom: 20px; }
+.badge-dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+@keyframes blink { 0%,100%{opacity:1}50%{opacity:0.25} }
+.badge-text { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green); }
+h1 { font-size: clamp(2.8rem, 5vw, 4.8rem); font-weight: 800; margin-bottom: 20px; color: #fff; }
+h1 .accent { color: var(--green); }
+.hero-sub { font-size: 1rem; color: var(--light); line-height: 1.65; max-width: 500px; margin-bottom: 34px; }
+.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 46px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; padding: 14px 28px; border-radius: 3px; border: 2px solid transparent; transition: background 0.2s, transform 0.15s, border-color 0.2s, color 0.2s; }
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--green); color: var(--black); border-color: var(--green); }
+.btn-primary:hover { background: var(--green-hover); }
+.btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.25); }
+.btn-ghost:hover { border-color: var(--green); color: var(--green); }
+.hero-proof { display: flex; gap: 36px; flex-wrap: wrap; }
+.proof-num { font-family: 'Barlow Condensed', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--green); line-height: 1; }
+.proof-label { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px; }
+
+/* HERO CARD */
+.hero-card { background: var(--charcoal); border: 1px solid var(--border); border-top: 4px solid var(--green); border-radius: 4px; padding: 28px 24px; }
+.card-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+.card-sub { font-size: 0.83rem; color: var(--muted); margin-bottom: 18px; }
+.form-group { margin-bottom: 12px; }
+.form-group label { display: block; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.form-group input, .form-group select { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 3px; color: #fff; font-family: 'Barlow', sans-serif; font-size: 0.9rem; padding: 10px 12px; outline: none; transition: border-color 0.2s; }
+.form-group input:focus, .form-group select:focus { border-color: var(--green); }
+.form-group select option { background: #242424; }
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.btn-form { width: 100%; background: var(--green); color: var(--black); font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 14px; border: none; border-radius: 3px; cursor: pointer; margin-top: 4px; transition: background 0.2s; }
+.btn-form:hover { background: var(--green-hover); }
+.form-note { font-size: 0.68rem; color: #555; text-align: center; margin-top: 8px; }
+.form-consent { font-size: 0.62rem; color: #555; text-align: center; margin-top: 8px; line-height: 1.5; padding-top: 8px; border-top: 1px solid var(--border); }
+
+/* TRUST BAR */
+.trust-bar { background: var(--green); padding: 14px 5vw; display: flex; align-items: center; justify-content: center; gap: 36px; flex-wrap: wrap; }
+.trust-item { display: flex; align-items: center; gap: 9px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.88rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--black); }
+
+/* SECTIONS */
+section { padding: 80px 5vw; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.section-header { margin-bottom: 48px; }
+.section-header h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 10px 0 14px; }
+.section-header p { color: var(--light); font-size: 1rem; line-height: 1.65; max-width: 540px; }
+
+/* SERVICES */
+.services { background: var(--charcoal); }
+.services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+.svc-card { background: var(--steel); padding: 36px 28px; position: relative; overflow: hidden; transition: background 0.25s; }
+.svc-card:hover { background: #292929; }
+.svc-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--green); transform:scaleX(0); transform-origin:left; transition:transform 0.35s; }
+.svc-card:hover::after { transform:scaleX(1); }
+.svc-number { position:absolute; top:16px; right:22px; font-family:'Barlow Condensed',sans-serif; font-size:5rem; font-weight:800; color:rgba(255,255,255,0.04); line-height:1; }
+.svc-icon { font-size:2.5rem; margin-bottom:16px; display:block; }
+.svc-card h3 { font-size:1.5rem; font-weight:700; margin-bottom:12px; }
+.svc-desc { color:var(--muted); font-size:0.88rem; line-height:1.7; margin-bottom:18px; }
+.svc-bullets { list-style:none; display:flex; flex-direction:column; gap:7px; margin-bottom:22px; }
+.svc-bullets li { font-size:0.84rem; color:var(--light); display:flex; align-items:center; gap:9px; }
+.svc-bullets li::before { content:''; width:6px; height:6px; background:var(--green); border-radius:50%; flex-shrink:0; }
+.svc-link { color:var(--green); font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; text-decoration:none; }
+
+/* INDUSTRIES */
+.industries { background: var(--black); }
+.ind-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:2px; }
+.ind-card { background:var(--steel); padding:26px 20px; text-align:center; transition:background 0.2s,transform 0.2s; }
+.ind-card:hover { background:#2E2E2E; transform:translateY(-4px); }
+.ind-icon { font-size:2rem; margin-bottom:10px; }
+.ind-name { font-family:'Barlow Condensed',sans-serif; font-size:1rem; font-weight:700; text-transform:uppercase; color:#fff; margin-bottom:5px; }
+.ind-desc { font-size:0.74rem; color:var(--muted); line-height:1.5; }
+
+/* WHY */
+.why { background: var(--charcoal); }
+.why-layout { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+.why-left h2 { font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:800; margin:10px 0 18px; }
+.why-left > p { color:var(--light); line-height:1.7; font-size:0.98rem; margin-bottom:28px; }
+.why-features { display:flex; flex-direction:column; gap:16px; }
+.why-feat { display:flex; gap:14px; align-items:flex-start; }
+.why-ico { width:42px; height:42px; background:rgba(46,204,113,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0; border:1px solid rgba(46,204,113,0.18); }
+.why-feat-text h4 { font-family:'Barlow Condensed',sans-serif; font-size:1rem; font-weight:700; text-transform:uppercase; color:var(--green); margin-bottom:3px; }
+.why-feat-text p { font-size:0.84rem; color:var(--muted); line-height:1.6; }
+.why-right { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.metric-card { background:var(--steel); border-radius:4px; padding:24px 20px; border-bottom:3px solid var(--green); }
+.metric-num { font-family:'Barlow Condensed',sans-serif; font-size:2.8rem; font-weight:800; color:var(--green); line-height:1; margin-bottom:6px; }
+.metric-label { font-size:0.74rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; line-height:1.4; }
+
+/* AREA */
+.area { background:var(--black); text-align:center; }
+.area-tags { display:flex; flex-wrap:wrap; gap:9px; justify-content:center; max-width:760px; margin:0 auto 32px; }
+.area-tag { background:rgba(46,204,113,0.08); border:1px solid rgba(46,204,113,0.22); color:var(--green); font-size:0.76rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; padding:8px 16px; border-radius:2px; }
+.port-note { background:var(--charcoal); border:1px solid var(--border); border-left:4px solid var(--green); border-radius:3px; padding:18px 22px; max-width:680px; margin:0 auto; text-align:left; font-size:0.88rem; color:var(--light); line-height:1.65; }
+.port-note strong { color:var(--green); }
+
+/* CTA BANNER */
+.cta-banner { background:var(--green); padding:60px 5vw; text-align:center; }
+.cta-banner h2 { font-size:clamp(1.9rem,4vw,3rem); font-weight:800; color:var(--black); margin-bottom:12px; }
+.cta-banner p { color:rgba(0,0,0,0.6); font-size:1rem; margin-bottom:24px; }
+.banner-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+.btn-dark { background:var(--black); color:var(--green); font-family:'Barlow Condensed',sans-serif; font-size:1rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:14px 28px; border-radius:3px; text-decoration:none; }
+.btn-outline-dark { background:transparent; color:var(--black); border:2px solid rgba(0,0,0,0.3); font-family:'Barlow Condensed',sans-serif; font-size:1rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:12px 26px; border-radius:3px; text-decoration:none; }
+
+/* FOOTER */
+footer { background:#080808; border-top:2px solid var(--green); padding:48px 5vw 24px; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; max-width:1200px; margin:0 auto 40px; }
+.footer-brand p { font-size:0.84rem; color:var(--muted); line-height:1.65; margin-top:12px; max-width:260px; }
+.footer-phone { display:flex; align-items:center; gap:8px; color:var(--green); font-family:'Barlow Condensed',sans-serif; font-size:1.1rem; font-weight:700; text-decoration:none; margin-top:14px; }
+.footer-col h4 { font-family:'Barlow Condensed',sans-serif; font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.15em; color:var(--green); margin-bottom:14px; }
+.footer-col a { display:block; font-size:0.82rem; color:var(--muted); text-decoration:none; margin-bottom:9px; }
+.footer-col a:hover { color:#fff; }
+.footer-bottom { border-top:1px solid var(--border); padding-top:20px; max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; font-size:0.74rem; color:#444; }
+.footer-disclaimer { max-width:1200px; margin:0 auto 16px; font-size:0.7rem; color:#555; text-align:center; line-height:1.6; border-top:1px solid var(--border); padding-top:18px; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo-wrap">
+    <div class="logo-mark">
+      <svg viewBox="0 0 240 240" fill="none"><rect x="42" y="48" width="28" height="76" rx="7" fill="#111"/><rect x="42" y="48" width="92" height="26" rx="7" fill="#111"/><rect x="34" y="124" width="116" height="30" rx="7" fill="#111"/><circle cx="62" cy="179" r="22" fill="#111"/><circle cx="62" cy="179" r="8" fill="#2ECC71"/><circle cx="126" cy="179" r="22" fill="#111"/><circle cx="126" cy="179" r="8" fill="#2ECC71"/><rect x="152" y="76" width="46" height="18" rx="5" fill="#111"/><rect x="152" y="48" width="18" height="46" rx="5" fill="#111"/></svg>
+    </div>
+    <div class="logo-text">Upstate<span>Lift Trucks</span></div>
+  </a>
+  <nav>
+    <a href="#services">Buy New</a>
+    <a href="#services">Buy Used</a>
+    <a href="#services">Rent</a>
+    <a href="#industries">Industries</a>
+    <a href="#area">Service Area</a>
+    <a href="#" class="nav-cta">Get a Free Quote</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge"><div class="badge-dot"></div><span class="badge-text">Upstate SC's Lift Truck & Material Handling Specialist</span></div>
+      <h1>Forklifts That<br>Keep Your<br><span class="accent">Business Moving</span></h1>
+      <p class="hero-sub">New and used forklifts for sale, plus flexible lift truck rental programs built for warehouses, manufacturers, and logistics operations across Greenville, Spartanburg, and the South Carolina Upstate.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">📋 Get a Free Quote</a>
+        <a href="tel:+18642146269" class="btn btn-ghost">📞 (864) 214-6269</a>
+      </div>
+      <div class="hero-proof">
+        <div><div class="proof-num">500+</div><div class="proof-label">Units in Network</div></div>
+        <div><div class="proof-num">24hr</div><div class="proof-label">Delivery Available</div></div>
+        <div><div class="proof-num">15+</div><div class="proof-label">Years Experience</div></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-title">Request a Free Quote</div>
+      <p class="card-sub">Our matching desk responds within 1 business hour.</p>
+      <div class="form-row-2">
+        <div class="form-group"><label>First Name *</label><input type="text" placeholder="John"></div>
+        <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Smith"></div>
+      </div>
+      <div class="form-group"><label>Company Name *</label><input type="text" placeholder="Acme Logistics LLC"></div>
+      <div class="form-group"><label>Business Phone *</label><input type="tel" placeholder="(864) 000-0000"></div>
+      <div class="form-group"><label>Work Email *</label><input type="email" placeholder="you@company.com"></div>
+      <div class="form-group">
+        <label>I'm Interested In *</label>
+        <select><option>Select one…</option><option>Buying a New Forklift</option><option>Buying a Used Forklift</option><option>Short-Term Rental</option><option>Long-Term Rental</option><option>Multiple Units / Fleet</option></select>
+      </div>
+      <button class="btn-form">Get My Free Quote →</button>
+      <p class="form-note">🔒 No spam. We only contact you about your request.</p>
+      <p class="form-consent">By submitting this form you agree to be contacted by Upstate Lift Trucks and up to two local service providers via phone, text, or email including via automated technology. Consent is not a condition of purchase.</p>
+    </div>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-item">🏭 Upstate SC Forklift Network</div>
+  <div class="trust-item">⚡ Same-Day Quotes</div>
+  <div class="trust-item">🚚 Delivery to Your Facility</div>
+  <div class="trust-item">🔧 Service & Maintenance Plans</div>
+  <div class="trust-item">🏆 Top Brands in Stock</div>
+</div>
+
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">What We Offer</div>
+      <h2>Three Ways to Get<br>the Right Forklift</h2>
+      <p>Whether you're building a fleet, replacing a lift truck, or need equipment for a short-term project — we have a solution that fits your business and budget.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card"><div class="svc-number">01</div><span class="svc-icon">🆕</span><h3>Buy New</h3><p class="svc-desc">Brand-new forklifts from Toyota, Crown, Hyster, Yale, and more — with manufacturer warranty options through participating providers.</p><ul class="svc-bullets"><li>Manufacturer warranty options</li><li>Latest emission-compliant models</li><li>Financing & lease-to-own options</li><li>Fleet pricing for multiple units</li></ul><a href="#" class="svc-link">Get a new forklift quote →</a></div>
+      <div class="svc-card"><div class="svc-number">02</div><span class="svc-icon">✅</span><h3>Buy Used</h3><p class="svc-desc">Inspected and certified pre-owned forklifts at a fraction of new prices. Every unit passes a multi-point inspection before delivery.</p><ul class="svc-bullets"><li>Fully inspected & recertified</li><li>90-day mechanical warranty available</li><li>Significant savings vs. new</li><li>Trade-ins accepted</li></ul><a href="#" class="svc-link">Browse used inventory →</a></div>
+      <div class="svc-card"><div class="svc-number">03</div><span class="svc-icon">📅</span><h3>Rent a Forklift</h3><p class="svc-desc">Daily, weekly, or monthly forklift rentals in Greenville, Spartanburg, Anderson, and the Upstate SC region.</p><ul class="svc-bullets"><li>Short & long-term programs</li><li>Delivered to your site</li><li>All maintenance included</li><li>No long-term commitment</li></ul><a href="#" class="svc-link">Check rental availability →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="industries" id="industries">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="label">Industries We Serve</div>
+      <h2>Built for Upstate SC's<br>Business Community</h2>
+      <p>From the Greenville-Spartanburg manufacturing corridor to distribution hubs along I-85 and I-26.</p>
+    </div>
+    <div class="ind-grid">
+      <div class="ind-card"><div class="ind-icon">🏎️</div><div class="ind-name">Automotive</div><div class="ind-desc">BMW, Michelin & Tier 1/2 suppliers in the Upstate SC corridor</div></div>
+      <div class="ind-card"><div class="ind-icon">📦</div><div class="ind-name">Warehousing & 3PL</div><div class="ind-desc">Electric reach trucks & pallet movers for high-density storage</div></div>
+      <div class="ind-card"><div class="ind-icon">🏭</div><div class="ind-name">Manufacturing</div><div class="ind-desc">Reliable forklifts for production floors & finished goods</div></div>
+      <div class="ind-card"><div class="ind-icon">🚛</div><div class="ind-name">Distribution</div><div class="ind-desc">High-throughput solutions for loading docks & cross-docking</div></div>
+      <div class="ind-card"><div class="ind-icon">🧱</div><div class="ind-name">Construction</div><div class="ind-desc">Rough terrain options for outdoor job sites</div></div>
+      <div class="ind-card"><div class="ind-icon">🛒</div><div class="ind-name">Retail & Grocery</div><div class="ind-desc">Quiet electric models for back-of-house & receiving</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="section-inner">
+    <div class="why-layout">
+      <div class="why-left">
+        <div class="label">Why Businesses Choose Us</div>
+        <h2>Upstate SC's Forklift<br>Matching Service —<br>Not a Call Center</h2>
+        <p>When your operation depends on uptime, you need a matching service that knows Upstate SC. We connect you with vetted independent providers across Greenville, Spartanburg, and beyond.</p>
+        <div class="why-features">
+          <div class="why-feat"><div class="why-ico">⚡</div><div class="why-feat-text"><h4>Fast Response Times</h4><p>Same-day quotes and 24-hour delivery available across Upstate SC.</p></div></div>
+          <div class="why-feat"><div class="why-ico">🔧</div><div class="why-feat-text"><h4>Certified Local Technicians</h4><p>Independent certified technicians for scheduled PM and emergency support.</p></div></div>
+          <div class="why-feat"><div class="why-ico">💰</div><div class="why-feat-text"><h4>Flexible Financing</h4><p>Purchase, lease, or rent — we structure deals around your cash flow.</p></div></div>
+          <div class="why-feat"><div class="why-ico">📍</div><div class="why-feat-text"><h4>Locally Focused</h4><p>Upstate SC-focused matching desk — not a 1-800 number.</p></div></div>
+        </div>
+      </div>
+      <div class="why-right">
+        <div class="metric-card"><div class="metric-num">500+</div><div class="metric-label">Units in Provider Network</div></div>
+        <div class="metric-card"><div class="metric-num">24hr</div><div class="metric-label">Target Response Window</div></div>
+        <div class="metric-card"><div class="metric-num">15+</div><div class="metric-label">Years Industry Experience</div></div>
+        <div class="metric-card"><div class="metric-num">98%</div><div class="metric-label">Customer Satisfaction Score</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="section-inner">
+    <div class="section-header" style="text-align:center;">
+      <div class="label">Service Area</div>
+      <h2>Delivering Across<br>Upstate South Carolina</h2>
+      <p style="margin:0 auto 36px;">Based in Greenville, SC — delivering forklifts throughout the Upstate from the I-85 and I-26 corridors to Spartanburg, Anderson, and beyond.</p>
+    </div>
+    <div class="area-tags">
+      <span class="area-tag">📍 Greenville, SC</span>
+      <span class="area-tag">📍 Spartanburg, SC</span>
+      <span class="area-tag">📍 Anderson, SC</span>
+      <span class="area-tag">📍 Greer, SC</span>
+      <span class="area-tag">📍 Simpsonville, SC</span>
+      <span class="area-tag">📍 Mauldin, SC</span>
+      <span class="area-tag">📍 Duncan, SC</span>
+      <span class="area-tag">📍 Boiling Springs, SC</span>
+      <span class="area-tag">📍 Gaffney, SC</span>
+      <span class="area-tag">📍 Union, SC</span>
+      <span class="area-tag">📍 Laurens, SC</span>
+      <span class="area-tag">📍 Seneca, SC</span>
+    </div>
+    <div class="port-note"><strong>📦 Greenville-Spartanburg Manufacturing Corridor:</strong> Home to BMW, Michelin, GE, and hundreds of supplier operations. We specialize in supplying forklifts along the I-85 and I-26 corridors with rapid delivery and flexible rental terms.</div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>Ready to Equip Your Operation?</h2>
+  <p>Talk to our Upstate SC equipment matching desk today. Same day.</p>
+  <div class="banner-btns">
+    <a href="#" class="btn-dark">📋 Get a Free Quote</a>
+    <a href="tel:+18642146269" class="btn-outline-dark">📞 Call (864) 214-6269</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo-wrap">
+        <div class="logo-mark"><svg viewBox="0 0 240 240" fill="none"><rect x="42" y="48" width="28" height="76" rx="7" fill="#111"/><rect x="42" y="48" width="92" height="26" rx="7" fill="#111"/><rect x="34" y="124" width="116" height="30" rx="7" fill="#111"/><circle cx="62" cy="179" r="22" fill="#111"/><circle cx="62" cy="179" r="8" fill="#2ECC71"/><circle cx="126" cy="179" r="22" fill="#111"/><circle cx="126" cy="179" r="8" fill="#2ECC71"/><rect x="152" y="76" width="46" height="18" rx="5" fill="#111"/><rect x="152" y="48" width="18" height="46" rx="5" fill="#111"/></svg></div>
+        <div class="logo-text">Upstate<span>Lift Trucks</span></div>
+      </div>
+      <p>Upstate SC's trusted lift truck matching service — new forklifts, certified used forklifts, and flexible rentals through our local provider network.</p>
+      <a href="tel:+18642146269" class="footer-phone">📞 (864) 214-6269</a>
+    </div>
+    <div class="footer-col"><h4>Services</h4><a href="#">Buy New Forklifts</a><a href="#">Buy Used Forklifts</a><a href="#">Forklift Rentals</a><a href="#">Fleet Programs</a></div>
+    <div class="footer-col"><h4>Industries</h4><a href="#">Automotive</a><a href="#">Warehousing / 3PL</a><a href="#">Manufacturing</a><a href="#">Distribution</a></div>
+    <div class="footer-col"><h4>Locations</h4><a href="#">Greenville, SC</a><a href="#">Spartanburg, SC</a><a href="#">Anderson, SC</a><a href="#">Greer, SC</a><a href="#">Simpsonville, SC</a></div>
+  </div>
+  <div class="footer-disclaimer">Upstate Lift Trucks is an independent equipment matching and lead referral service. We are not an OEM, manufacturer, or direct forklift dealer. Requests may be fulfilled by licensed third-party local providers. Upstate Lift Trucks may receive compensation from participating independent service providers when a customer request is matched.</div>
+  <div class="footer-bottom">
+    <div>© 2026 Upstate Lift Trucks. All rights reserved. 1451 Woodruff Rd Suite 1 #1146, Greenville, SC 29607</div>
+    <div style="display:flex;gap:14px;"><a href="#" style="color:#666;text-decoration:none;">Terms</a><a href="#" style="color:#666;text-decoration:none;">Privacy</a><a href="#" style="color:#666;text-decoration:none;">SMS Terms</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
