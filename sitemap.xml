@@ -50,9 +50,15 @@
   <!-- Blog -->
   <url>
     <loc>https://upstatelifttrucks.com/blog/</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://upstatelifttrucks.com/blog/forklift-fleet-management-upstate-sc.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upstatelifttrucks.com/blog/forklift-types-guide-upstate-sc.html</loc>
