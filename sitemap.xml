@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://upstatelifttrucks.com/links.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
@@ -50,9 +50,15 @@
   <!-- Blog -->
   <url>
     <loc>https://upstatelifttrucks.com/blog/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://upstatelifttrucks.com/blog/forklift-lease-rent-buy-upstate-sc.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upstatelifttrucks.com/blog/forklift-safety-requirements-upstate-sc.html</loc>
